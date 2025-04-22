@@ -41,6 +41,25 @@ Design a data structure that supports adding integers and finding the median of 
 python medianFinder.py
 ```
 
+### Sliding Window Median (LeetCode #480)
+
+File: [slidingWindowMedian.py](./slidingWindowMedian.py)
+
+**Problem Description:**
+Find the median of all the elements in a sliding window of size k as it moves from the beginning to the end of an array.
+
+**Approach:**
+- Extension of the two-heap approach used in Find Median from Data Stream
+- Uses a hashmap to track elements that need to be removed from heaps
+- Lazy removal approach to maintain heap structure efficiently
+- Handles window sliding with careful rebalancing of heaps
+- Time complexity: O(n log k) where n is the length of array and k is window size
+
+**How to run:**
+```bash
+python slidingWindowMedian.py
+```
+
 ## Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
