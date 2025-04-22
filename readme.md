@@ -22,6 +22,25 @@ Given an array of integers `nums` and an integer `target`, return indices of the
 python twoSum.py
 ```
 
+### Find Median from Data Stream (LeetCode #295)
+
+File: [medianFinder.py](./medianFinder.py)
+
+**Problem Description:**
+Design a data structure that supports adding integers and finding the median of the stream at any time.
+
+**Approach:**
+- Uses two heaps to maintain the stream of numbers
+- Small heap (max heap) stores the smaller half of numbers
+- Large heap (min heap) stores the larger half of numbers
+- Carefully balances the heaps after each insertion
+- O(log n) time for adding numbers and O(1) for finding median
+
+**How to run:**
+```bash
+python medianFinder.py
+```
+
 ## Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
