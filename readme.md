@@ -60,6 +60,25 @@ Find the median of all the elements in a sliding window of size k as it moves fr
 python slidingWindowMedian.py
 ```
 
+### Redundant Connection (LeetCode #684)
+
+File: [redundantConnection.py](./redundantConnection.py)
+
+**Problem Description:**
+In an undirected graph formed from a tree with an additional edge, find and return the edge that can be removed to make the graph a tree again.
+
+**Approach:**
+- Uses Union-Find (Disjoint Set) algorithm
+- Tracks connected components and detects cycles
+- When adding an edge creates a cycle, that edge is redundant
+- Time complexity: O(n) where n is the number of edges, with path compression
+- Space complexity: O(n) for parent and rank tracking
+
+**How to run:**
+```bash
+python redundantConnection.py
+```
+
 ## Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
