@@ -79,6 +79,26 @@ In an undirected graph formed from a tree with an additional edge, find and retu
 python redundantConnection.py
 ```
 
+### Implement Trie (Prefix Tree) (LeetCode #208)
+
+File: [implementTrie.py](./implementTrie.py)
+
+**Problem Description:**
+Implement a trie (prefix tree) with insert, search, and startsWith methods.
+
+**Approach:**
+- Uses a custom TrieNode class with children dictionary and word flag
+- Insert: builds a path in the trie for each character, marking the end as a complete word
+- Search: traverses the trie to find if a word exists completely
+- StartsWith: checks if a prefix exists in the trie
+- Time complexity: O(m) for all operations, where m is the key length
+- Space complexity: O(n) where n is total number of characters across all keys
+
+**How to run:**
+```bash
+python implementTrie.py
+```
+
 ## Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
