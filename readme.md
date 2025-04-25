@@ -99,6 +99,26 @@ Implement a trie (prefix tree) with insert, search, and startsWith methods.
 python implementTrie.py
 ```
 
+### Number of Connected Components in an Undirected Graph (LeetCode #323)
+
+File: [countComponents.py](./countComponents.py)
+
+**Problem Description:**
+Count the number of connected components in an undirected graph with n nodes labeled from 0 to n-1 and a list of undirected edges.
+
+**Approach:**
+- Uses Depth-First Search (DFS) to traverse connected components
+- Builds an adjacency list representation of the graph
+- Iterates through all nodes and performs DFS from unvisited nodes
+- Increments counter for each new connected component discovered
+- Time complexity: O(V + E) where V is number of vertices and E is number of edges
+- Space complexity: O(V + E) for adjacency list and visited set
+
+**How to run:**
+```bash
+python countComponents.py
+```
+
 ## Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
