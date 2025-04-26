@@ -140,6 +140,25 @@ Given a list of accounts where each account contains a name and a list of emails
 python accountsmerge.py
 ```
 
-## Usage
+### Maximum Subarray (LeetCode #53)
+
+File: [maximumSubArray.py](./maximumSubArray.py)
+
+**Problem Description:**
+Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+**Approach:**
+- Uses Kadane's algorithm to find maximum subarray sum
+- Maintains two variables: current sum and maximum sum
+- For each element, decides whether to extend the current subarray or start a new one
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python maximumSubArray.py
+```
+
+#     # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
