@@ -159,6 +159,26 @@ Given an integer array `nums`, find the contiguous subarray (containing at least
 python maximumSubArray.py
 ```
 
+### Maximum Subarray Sum Circular (LeetCode #918)
+
+File: [maxSubarraySumCircular.py](./maxSubarraySumCircular.py)
+
+**Problem Description:**
+Given a circular integer array `nums`, find the maximum possible sum of a non-empty subarray, considering the array as circular (meaning the last element connects to the first element).
+
+**Approach:**
+- Extended version of Kadane's algorithm that works with circular arrays
+- Computes both maximum subarray sum (standard case) and minimum subarray sum
+- For circular case, the maximum sum equals total sum minus minimum subarray sum
+- Handles the edge case when all elements are negative
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python maxSubarraySumCircular.py
+```
+
 #     # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
