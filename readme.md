@@ -179,6 +179,26 @@ Given a circular integer array `nums`, find the maximum possible sum of a non-em
 python maxSubarraySumCircular.py
 ```
 
-#     # Usage
+### Swim in Rising Water (LeetCode #778)
+
+File: [swimInRisingWater.py](./swimInRisingWater.py)
+
+**Problem Description:**
+Given an N x N grid where each cell has a height, find the minimum time needed to swim from the top-left corner to the bottom-right corner. You can swim from one cell to another if the water level is at least the height of the destination cell.
+
+**Approach:**
+- Uses Dijkstra's algorithm with a min-heap to find the minimum time path
+- Tracks visited cells to avoid revisiting
+- For each cell, considers all four possible directions (up, down, left, right)
+- The time to reach a cell is the maximum of the current time and the cell's height
+- Time complexity: O(N² log N) where N is the grid size
+- Space complexity: O(N²) for the visited set and heap
+
+**How to run:**
+```bash
+python swimInRisingWater.py
+```
+
+# Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
