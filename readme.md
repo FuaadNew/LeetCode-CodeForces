@@ -199,6 +199,25 @@ Given an N x N grid where each cell has a height, find the minimum time needed t
 python swimInRisingWater.py
 ```
 
+### Longest Turbulent Subarray (LeetCode #978)
+
+File: [longestTurbulentArray.py](./longestTurbulentArray.py)
+
+**Problem Description:**
+Given an integer array `arr`, find the length of a maximum size turbulent subarray. A subarray is turbulent if the comparison sign flips between each adjacent pair of elements in the subarray.
+
+**Approach:**
+- Uses a sliding window approach to track the turbulent subarray length
+- Maintains the current comparison sign and length of the turbulent subarray
+- Resets the length when adjacent elements are equal or when the sign pattern breaks
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python longestTurbulentArray.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
