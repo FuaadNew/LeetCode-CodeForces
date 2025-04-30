@@ -218,6 +218,25 @@ Given an integer array `arr`, find the length of a maximum size turbulent subarr
 python longestTurbulentArray.py
 ```
 
+### Contains Duplicate II (LeetCode #219)
+
+File: [containsDuplicate.py](./containsDuplicate.py)
+
+**Problem Description:**
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
+
+**Approach:**
+- Uses sliding window technique with a set to track elements
+- Maintains a window of size k+1 using two pointers
+- Checks for duplicates within the window
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(k) for the sliding window set
+
+**How to run:**
+```bash
+python containsDuplicate.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
