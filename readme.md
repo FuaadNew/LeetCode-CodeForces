@@ -237,6 +237,25 @@ Given an array of integers and an integer k, find out whether there are two dist
 python containsDuplicate.py
 ```
 
+### Number of Subarrays with Average Above Threshold (LeetCode #1343)
+
+File: [numOfSubarrays.py](./numOfSubarrays.py)
+
+**Problem Description:**
+Given an array of integers `arr`, an integer `k`, and a threshold, return the number of subarrays of size `k` whose average is greater than or equal to the threshold.
+
+**Approach:**
+- Uses sliding window technique for efficient computation
+- Maintains a running sum of the current window
+- For each window of size k, checks if the average meets the threshold
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using constant extra space
+
+**How to run:**
+```bash
+python numOfSubarrays.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
