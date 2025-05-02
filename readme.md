@@ -256,6 +256,26 @@ Given an array of integers `arr`, an integer `k`, and a threshold, return the nu
 python numOfSubarrays.py
 ```
 
+### Minimum Size Subarray Sum (LeetCode #209)
+
+File: [minSubArrayLen.py](./minSubArrayLen.py)
+
+**Problem Description:**
+Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a subarray whose sum is greater than or equal to `target`. If there is no such subarray, return 0.
+
+**Approach:**
+- Uses sliding window technique to find the minimum length subarray
+- Maintains a window with left and right pointers
+- Expands the window by moving the right pointer and shrinks it by moving the left pointer
+- Keeps track of the current sum and minimum length found
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python minSubArrayLen.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
