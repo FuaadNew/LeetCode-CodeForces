@@ -276,6 +276,25 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 python minSubArrayLen.py
 ```
 
+### Longest Repeating Character Replacement (LeetCode #424)
+
+File: [characterReplacement.py](./characterReplacement.py)
+
+**Problem Description:**
+Given a string `s` and an integer `k`, find the length of the longest substring containing the same letter that can be obtained by replacing at most `k` characters.
+
+**Approach:**
+- Uses sliding window technique with a character count dictionary
+- Maintains a window where the number of replacements needed (window length - max frequency) is at most `k`
+- Adjusts window size dynamically while tracking character frequencies
+- Time complexity: O(n) where n is the length of the string
+- Space complexity: O(1) as we only store counts for a fixed number of characters
+
+**How to run:**
+```bash
+python characterReplacement.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
