@@ -22,6 +22,25 @@ Given an array of integers `nums` and an integer `target`, return indices of the
 python twoSum.py
 ```
 
+### Two Sum II (LeetCode #167)
+
+File: [twoSum_two.py](./twoSum_two.py)
+
+**Problem Description:**
+Given a 1-indexed array of integers `numbers` that is already sorted in non-decreasing order, find two numbers such that they add up to a specific `target` number. Return the indices of the two numbers, where index1 must be less than index2.
+
+**Approach:**
+- Two-pointer solution with O(n) time complexity
+- Uses left and right pointers starting from both ends of the array
+- Moves pointers inward based on the sum comparison with target
+- Returns 1-indexed positions of the two numbers
+- Space complexity: O(1) as it uses constant extra space
+
+**How to run:**
+```bash
+python twoSum_two.py
+```
+
 ### Find Median from Data Stream (LeetCode #295)
 
 File: [medianFinder.py](./medianFinder.py)
