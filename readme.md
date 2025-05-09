@@ -333,6 +333,24 @@ Given a string `s`, determine if it is a palindrome, considering only alphanumer
 python isPalindrome.py
 ```
 
+### Remove Duplicates from Sorted Array II (LeetCode #80)
+
+File: [removeDuplicates.py](./removeDuplicates.py)
+
+**Problem Description:**
+Given a sorted array `nums`, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
+
+**Approach:**
+- Uses two-pointer technique with O(n) time complexity
+- Maintains array in-place with O(1) extra space
+- Allows at most 2 occurrences of each element
+- Returns the length of the modified array
+
+**How to run:**
+```bash
+python removeDuplicates.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
