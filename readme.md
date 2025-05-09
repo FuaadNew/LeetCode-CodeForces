@@ -333,6 +333,25 @@ Given a string `s`, determine if it is a palindrome, considering only alphanumer
 python isPalindrome.py
 ```
 
+### Container With Most Water (LeetCode #11)
+
+File: [maxArea.py](./maxArea.py)
+
+**Problem Description:**
+Given n non-negative integers representing the height of vertical lines, find two lines that together with the x-axis forms a container that holds the most water.
+
+**Approach:**
+- Uses two-pointer technique starting from both ends of the array
+- Moves the pointer with the smaller height inward
+- Keeps track of the maximum area found
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python maxArea.py
+```
+
 ### Remove Duplicates from Sorted Array II (LeetCode #80)
 
 File: [removeDuplicates.py](./removeDuplicates.py)
