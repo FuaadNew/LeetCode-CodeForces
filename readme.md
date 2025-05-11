@@ -389,6 +389,25 @@ Given n non-negative integers representing an elevation map where the width of e
 python trap.py
 ```
 
+### Range Sum Query - Immutable (LeetCode #303)
+
+File: [numArray.py](./numArray.py)
+
+**Problem Description:**
+Given an integer array `nums`, handle multiple queries of the following type: Calculate the sum of the elements of `nums` between indices `left` and `right` inclusive.
+
+**Approach:**
+- Uses prefix sum array for O(1) range queries
+- Precomputes cumulative sums during initialization
+- Efficiently calculates range sums by subtracting prefix sums
+- Time complexity: O(n) for initialization, O(1) for range queries
+- Space complexity: O(n) for storing prefix sums
+
+**How to run:**
+```bash
+python numArray.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
