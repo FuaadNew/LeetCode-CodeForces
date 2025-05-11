@@ -370,6 +370,25 @@ Given a sorted array `nums`, remove the duplicates in-place such that duplicates
 python removeDuplicates.py
 ```
 
+### Trapping Rain Water (LeetCode #42)
+
+File: [trap.py](./trap.py)
+
+**Problem Description:**
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
+**Approach:**
+- Uses dynamic programming with prefix and postfix arrays
+- Tracks maximum heights from both left and right sides
+- Water trapped at each index is determined by the minimum of max heights from both sides
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(n) for storing prefix and postfix arrays
+
+**How to run:**
+```bash
+python trap.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
