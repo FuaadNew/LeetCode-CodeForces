@@ -389,6 +389,25 @@ Given n non-negative integers representing an elevation map where the width of e
 python trap.py
 ```
 
+### Find Pivot Index (LeetCode #724)
+
+File: [pivot_index.py](./pivot_index.py)
+
+**Problem Description:**
+Given an array of integers `nums`, calculate the pivot index of this array. The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+
+**Approach:**
+- Uses linear scan to check each index as potential pivot
+- For each index, calculates sum of elements to its left and right
+- Returns the first index where left sum equals right sum
+- Time complexity: O(n²) where n is the length of the array
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python pivot_index.py
+```
+
 ### Range Sum Query - Immutable (LeetCode #303)
 
 File: [numArray.py](./numArray.py)
