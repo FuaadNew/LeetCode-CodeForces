@@ -446,6 +446,26 @@ Given a 2D matrix `matrix`, handle multiple queries of the following type: Calcu
 python sumRegion.py
 ```
 
+### Product of Array Except Self (LeetCode #238)
+
+File: [productExceptSelf.py](./productExceptSelf.py)
+
+**Problem Description:**
+Given an array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`. The algorithm must run in O(n) time and without using the division operation.
+
+**Approach:**
+- Uses two arrays to store products from left and right sides
+- Left product array stores running product of all elements to the left
+- Right product array stores running product of all elements to the right
+- Final answer at each index is product of corresponding left and right products
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(n) for storing left and right product arrays
+
+**How to run:**
+```bash
+python productExceptSelf.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
