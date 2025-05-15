@@ -466,6 +466,27 @@ Given an array `nums`, return an array `answer` such that `answer[i]` is equal t
 python productExceptSelf.py
 ```
 
+### Subarray Sum Equals K (LeetCode #560)
+
+File: [subarraySum.py](./subarraySum.py)
+
+**Problem Description:**
+Given an array of integers `nums` and an integer `k`, return the total number of continuous subarrays whose sum equals to `k`.
+
+**Approach:**
+- Uses a hash map to store prefix sum frequencies
+- For each element, calculates the running prefix sum
+- Checks if (prefix sum - k) exists in the hash map
+- If found, adds the frequency of that difference to the result count
+- Updates the frequency of the current prefix sum in the hash map
+- Time complexity: O(n) where n is the length of the array
+- Space complexity: O(n) for storing the prefix sum frequencies
+
+**How to run:**
+```bash
+python subarraySum.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
