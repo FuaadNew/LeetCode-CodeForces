@@ -487,6 +487,25 @@ Given an array of integers `nums` and an integer `k`, return the total number of
 python subarraySum.py
 ```
 
+### Middle of the Linked List (LeetCode #876)
+
+File: [middleNode.py](./middleNode.py)
+
+**Problem Description:**
+Given the head of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
+
+**Approach:**
+- Uses the two-pointer technique (slow and fast pointers)
+- Fast pointer moves twice as fast as the slow pointer
+- When fast pointer reaches the end, slow pointer is at the middle
+- Time complexity: O(n) where n is the length of the linked list
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python middleNode.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
