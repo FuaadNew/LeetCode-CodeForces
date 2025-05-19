@@ -506,6 +506,26 @@ Given the head of a singly linked list, return the middle node of the linked lis
 python middleNode.py
 ```
 
+### Maximum Twin Sum of a Linked List (LeetCode #2130)
+
+File: [pairSum.py](./pairSum.py)
+
+**Problem Description:**
+In a linked list of size n, where n is even, the ith node (0-indexed) of the linked list is known as the twin of the (n-1-i)th node. Find the maximum twin sum in the linked list, where twin sum is defined as the sum of a node and its twin.
+
+**Approach:**
+- Uses two-pointer technique to find the middle of the linked list
+- Reverses the second half of the linked list
+- Compares corresponding nodes from the first half and reversed second half
+- Calculates the maximum twin sum by iterating through both halves
+- Time complexity: O(n) where n is the length of the linked list
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python pairSum.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
