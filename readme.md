@@ -526,6 +526,26 @@ In a linked list of size n, where n is even, the ith node (0-indexed) of the lin
 python pairSum.py
 ```
 
+### Linked List Cycle (LeetCode #141)
+
+File: [hasCycle.py](./hasCycle.py)
+
+**Problem Description:**
+Given the head of a linked list, determine if the linked list has a cycle in it. A cycle occurs when a node in the linked list can be reached again by continuously following the next pointer.
+
+**Approach:**
+- Uses Floyd's Tortoise and Hare algorithm (two-pointer technique)
+- Slow pointer moves one step at a time, fast pointer moves two steps
+- If there is a cycle, the fast pointer will eventually meet the slow pointer
+- If there is no cycle, the fast pointer will reach the end of the list
+- Time complexity: O(n) where n is the length of the linked list
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python hasCycle.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
