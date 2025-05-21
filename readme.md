@@ -546,6 +546,26 @@ Given the head of a linked list, determine if the linked list has a cycle in it.
 python hasCycle.py
 ```
 
+### Linked List Cycle II (LeetCode #142)
+
+File: [detectCycle.py](./detectCycle.py)
+
+**Problem Description:**
+Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+
+**Approach:**
+- Uses Floyd's Tortoise and Hare algorithm (two-pointer technique)
+- First phase: Detect if a cycle exists using slow and fast pointers
+- Second phase: Find the entry point of the cycle by resetting slow pointer to head
+- When slow and fast pointers meet again, that node is the start of the cycle
+- Time complexity: O(n) where n is the length of the linked list
+- Space complexity: O(1) using only constant extra space
+
+**How to run:**
+```bash
+python detectCycle.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
