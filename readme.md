@@ -100,7 +100,9 @@ python redundantConnection.py
 
 ### Implement Trie (Prefix Tree) (LeetCode #208)
 
-File: [implementTrie.py](./implementTrie.py)
+Files: 
+- [implementTrie.py](./implementTrie.py) - Original implementation
+- [trieNode.py](./trieNode.py) - Modular implementation
 
 **Problem Description:**
 Implement a trie (prefix tree) with insert, search, and startsWith methods.
@@ -113,9 +115,16 @@ Implement a trie (prefix tree) with insert, search, and startsWith methods.
 - Time complexity: O(m) for all operations, where m is the key length
 - Space complexity: O(n) where n is total number of characters across all keys
 
+**Implementation Details (trieNode.py):**
+- Modular implementation with separate TrieNode and Trie classes
+- TrieNode class manages character nodes and word flags
+- Trie class provides the public interface for operations
+- Clean, reusable implementation for other prefix-based problems
+
 **How to run:**
 ```bash
 python implementTrie.py
+python trieNode.py
 ```
 
 ### Number of Connected Components in an Undirected Graph (LeetCode #323)
