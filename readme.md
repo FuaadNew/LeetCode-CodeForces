@@ -575,6 +575,28 @@ Given the head of a linked list, return the node where the cycle begins. If ther
 python detectCycle.py
 ```
 
+### Word Search II (LeetCode #212)
+
+File: [word_search.py](./word_search.py)
+
+**Problem Description:**
+Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring.
+
+**Approach:**
+- Uses Trie data structure for efficient word storage and prefix matching
+- Implements backtracking DFS to explore all possible paths on the board
+- Builds a Trie from the input words for O(1) prefix lookup
+- For each cell on the board, performs DFS to find all possible words
+- Uses a visited set to avoid revisiting cells during the current path
+- Removes found words from results using a set to avoid duplicates
+- Time complexity: O(m × n × 4^L) where m,n are board dimensions and L is max word length
+- Space complexity: O(W × L) for Trie storage where W is number of words
+
+**How to run:**
+```bash
+python word_search.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
