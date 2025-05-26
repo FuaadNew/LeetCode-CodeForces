@@ -597,6 +597,28 @@ Given an m x n board of characters and a list of strings words, return all words
 python word_search.py
 ```
 
+### Prefix and Suffix Search (LeetCode #745)
+
+File: [trie_search.py](./trie_search.py)
+
+**Problem Description:**
+Design a special dictionary that can search words by a prefix and a suffix. Implement the WordFilter class with a constructor that takes an array of words and a method f(prefix, suffix) that returns the index of the word with the given prefix and suffix. If there is more than one valid index, return the largest index.
+
+**Approach:**
+- Uses Trie data structure to store all possible prefix#suffix combinations
+- During initialization, generates all combinations of prefixes and suffixes for each word
+- Stores the word index at each leaf node in the Trie
+- For queries, combines the prefix and suffix with '#' separator and searches the Trie
+- Returns the stored index if the pattern exists, -1 otherwise
+- Time complexity: O(N × K²) for initialization where N is number of words and K is average word length
+- Query time complexity: O(P + S) where P is prefix length and S is suffix length
+- Space complexity: O(N × K²) for storing all prefix#suffix combinations
+
+**How to run:**
+```bash
+python trie_search.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
