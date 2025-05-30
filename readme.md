@@ -601,6 +601,27 @@ Design a special dictionary that can search words by a prefix and a suffix. Impl
 python trie_search.py
 ```
 
+### Accounts Merge (LeetCode #721)
+
+File: [accountsMerge.py](./accountsMerge.py)
+
+**Problem Description:**
+Given a list of accounts where each account contains a name and a list of email addresses, merge accounts that belong to the same person. Two accounts belong to the same person if they share at least one common email address.
+
+**Approach:**
+- Uses graph-based approach with DFS traversal to find connected email groups
+- Builds an adjacency list where emails within the same account are connected
+- Uses DFS to find connected components (groups of emails belonging to the same person)
+- Maintains a mapping from emails to names for result construction
+- Returns merged accounts with names and sorted email lists
+- Time complexity: O(N × M × log(M)) where N is number of accounts and M is average emails per account
+- Space complexity: O(N × M) for the graph and visited tracking
+
+**How to run:**
+```bash
+python accountsMerge.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
