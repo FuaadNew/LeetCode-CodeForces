@@ -149,26 +149,6 @@ Count the number of connected components in an undirected graph with n nodes lab
 python countComponents.py
 ```
 
-### Accounts Merge (LeetCode #721)
-
-File: [accountsmerge.py](./accountsmerge.py)
-
-**Problem Description:**
-Given a list of accounts where each account contains a name and a list of emails, merge accounts that belong to the same person (i.e., have at least one common email).
-
-**Approach:**
-- Uses depth-first search (DFS) to find connected email addresses
-- Builds an adjacency list to represent connections between emails
-- Maps emails to account names
-- Performs DFS starting from each unvisited email to find all connected emails
-- Sorts emails within each merged account for consistent output
-- Time complexity: O(n log n) where n is the total number of emails
-- Space complexity: O(n) for adjacency list and visited set
-
-**How to run:**
-```bash
-python accountsmerge.py
-```
 
 ### Maximum Subarray (LeetCode #53)
 
