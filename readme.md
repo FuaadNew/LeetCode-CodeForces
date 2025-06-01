@@ -41,6 +41,26 @@ Given a 1-indexed array of integers `numbers` that is already sorted in non-decr
 python twoSum_two.py
 ```
 
+### My Calendar I (LeetCode #729)
+
+File: [myCalender.py](./myCalender.py)
+
+**Problem Description:**
+Implement a calendar that can book events without overlapping. The MyCalendar class should support the book(startTime, endTime) method that returns true if the event can be added to the calendar successfully without causing a double booking.
+
+**Approach:**
+- Uses binary search to find the optimal insertion point for new events
+- Maintains events in sorted order by start time for efficient searching
+- Checks for overlaps with neighboring events using a helper method
+- Returns false if booking would cause an overlap, true otherwise
+- Time complexity: O(log n) for booking due to binary search and insertion
+- Space complexity: O(n) to store the calendar events
+
+**How to run:**
+```bash
+python myCalender.py
+```
+
 ### Find Median from Data Stream (LeetCode #295)
 
 File: [medianFinder.py](./medianFinder.py)
