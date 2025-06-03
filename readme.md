@@ -642,6 +642,27 @@ Given a list of accounts where each account contains a name and a list of email 
 python accountsMerge.py
 ```
 
+### Binary Search Tree Iterator (LeetCode #173)
+
+File: [BSTIterator.py](./BSTIterator.py)
+
+**Problem Description:**
+Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST). The iterator should support next() and hasNext() methods.
+
+**Approach:**
+- Uses iterative in-order traversal with a stack for memory-efficient iteration
+- Maintains a stack to store nodes and a current pointer for traversal
+- next() method returns the next smallest element in the BST
+- hasNext() method checks if there are more elements to iterate
+- Implements lazy evaluation - only processes nodes as needed
+- Time complexity: O(1) average for next() and hasNext(), O(h) worst case where h is tree height
+- Space complexity: O(h) for the stack where h is the height of the tree
+
+**How to run:**
+```bash
+python BSTIterator.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
