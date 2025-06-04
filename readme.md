@@ -663,6 +663,26 @@ Implement the BSTIterator class that represents an iterator over the in-order tr
 python BSTIterator.py
 ```
 
+### Binary Tree Preorder Traversal (LeetCode #144)
+
+File: [preorderTraversal.py](./preorderTraversal.py)
+
+**Problem Description:**
+Given the root of a binary tree, return the preorder traversal of its nodes' values. Preorder traversal visits nodes in the order: root, left subtree, right subtree.
+
+**Approach:**
+- Uses recursive depth-first search (DFS) to traverse the tree
+- Visits current node first, then recursively traverses left and right subtrees
+- Maintains a result list to store node values in preorder sequence
+- Base case handles null nodes by returning immediately
+- Time complexity: O(n) where n is the number of nodes in the tree
+- Space complexity: O(h) for recursion stack where h is the height of the tree
+
+**How to run:**
+```bash
+python preorderTraversal.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
