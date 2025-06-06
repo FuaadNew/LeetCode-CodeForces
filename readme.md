@@ -683,6 +683,26 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 python preorderTraversal.py
 ```
 
+### Binary Tree Postorder Traversal (LeetCode #145)
+
+File: [postorderTraversal.py](./postorderTraversal.py)
+
+**Problem Description:**
+Given the root of a binary tree, return the postorder traversal of its nodes' values. Postorder traversal visits nodes in the order: left subtree, right subtree, root.
+
+**Approach:**
+- Uses iterative approach with a stack and visited flags for memory-efficient traversal
+- Maintains a stack of (node, visited) tuples to track traversal state
+- Processes nodes only after both left and right subtrees have been visited
+- Avoids recursion to prevent stack overflow for deep trees
+- Time complexity: O(n) where n is the number of nodes in the tree
+- Space complexity: O(h) for the stack where h is the height of the tree
+
+**How to run:**
+```bash
+python postorderTraversal.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
