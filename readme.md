@@ -703,6 +703,27 @@ Given the root of a binary tree, return the postorder traversal of its nodes' va
 python postorderTraversal.py
 ```
 
+### IPO (LeetCode #502)
+
+File: [findMaximizedCapital.py](./findMaximizedCapital.py)
+
+**Problem Description:**
+You are given several projects with their capital requirements and expected profits. You can start with an initial capital w and can choose at most k projects to maximize your final capital.
+
+**Approach:**
+- Uses two-heap strategy for optimal project selection
+- Min heap stores projects sorted by capital requirements
+- Max heap stores available projects sorted by profit (highest first)
+- Greedily selects the most profitable project that can be afforded
+- For each of k iterations, moves affordable projects to max heap and selects the best one
+- Time complexity: O(n log n + k log n) where n is number of projects
+- Space complexity: O(n) for the heaps
+
+**How to run:**
+```bash
+python findMaximizedCapital.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
