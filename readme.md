@@ -724,6 +724,27 @@ You are given several projects with their capital requirements and expected prof
 python findMaximizedCapital.py
 ```
 
+### Subsets (LeetCode #78)
+
+File: [subsets.py](./subsets.py)
+
+**Problem Description:**
+Given an integer array `nums` of unique elements, return all possible subsets (the power set). The solution set must not contain duplicate subsets and can be returned in any order.
+
+**Approach:**
+- Uses recursive backtracking with depth-first search (DFS)
+- For each element, makes two recursive calls: include the element and exclude the element
+- Maintains a current subset that gets modified during recursion
+- Creates a copy of the subset when reaching the base case (end of array)
+- Explores all 2^n possible combinations systematically
+- Time complexity: O(2^n × n) where n is the length of the input array
+- Space complexity: O(n) for recursion stack depth
+
+**How to run:**
+```bash
+python subsets.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
