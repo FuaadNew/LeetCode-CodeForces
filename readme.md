@@ -745,6 +745,26 @@ Given an integer array `nums` of unique elements, return all possible subsets (t
 python subsets.py
 ```
 
+### Subsets II (LeetCode #90)
+
+File: [subsets_two.py](./subsets_two.py)
+
+**Problem Description:**
+Given an integer array `nums` that may contain duplicates, return all possible subsets (the power set). The solution set must not contain duplicate subsets.
+
+**Approach:**
+- Uses DFS backtracking with duplicate handling
+- Sorts input array to group duplicates together
+- For each number, makes two choices: include or exclude
+- Skips duplicate numbers to avoid generating duplicate subsets
+- Time complexity: O(2^n) where n is the length of the array
+- Space complexity: O(n) for recursion stack
+
+**How to run:**
+```bash
+python subsets_two.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
