@@ -765,6 +765,27 @@ Given an integer array `nums` that may contain duplicates, return all possible s
 python subsets_two.py
 ```
 
+### Combination Sum (LeetCode #39)
+
+File: [combinationSum.py](./combinationSum.py)
+
+**Problem Description:**
+Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` where the chosen numbers sum to `target`. You may choose the same number from `candidates` an unlimited number of times.
+
+**Approach:**
+- Uses recursive backtracking with depth-first search (DFS)
+- For each candidate, makes two decisions: include it (allowing reuse) or skip to next candidate
+- Maintains a current subset and running sum to track progress toward target
+- Backtracks by removing elements when exploring alternative paths
+- Base cases: return when sum equals target, or when sum exceeds target or all candidates processed
+- Time complexity: O(2^t) where t is the target value (worst case when candidates=[1])
+- Space complexity: O(target) for recursion depth in worst case
+
+**How to run:**
+```bash
+python combinationSum.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
