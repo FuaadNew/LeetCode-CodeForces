@@ -786,6 +786,27 @@ Given an array of distinct integers `candidates` and a target integer `target`, 
 python combinationSum.py
 ```
 
+### Letter Combinations of a Phone Number (LeetCode #17)
+
+File: [phone_combinations.py](./phone_combinations.py)
+
+**Problem Description:**
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. A mapping of digit to letters (just like on the telephone buttons) is given.
+
+**Approach:**
+- Uses Depth-First Search (DFS) with backtracking to generate all combinations
+- Maps digits 2-9 to their corresponding phone keypad letters
+- Recursively builds combinations character by character
+- Backtracks by removing the last added character to explore other possibilities
+- Handles edge case of empty input by returning an empty list
+- Time complexity: O(4^n) where n is the number of digits (worst case when all digits map to 4 letters)
+- Space complexity: O(4^n) for storing all possible combinations
+
+**How to run:**
+```bash
+python phone_combinations.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
