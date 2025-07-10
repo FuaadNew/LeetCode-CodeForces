@@ -850,6 +850,28 @@ Given a collection of numbers `nums` that might contain duplicates, return all p
 python permuteUnique.py
 ```
 
+### Network Delay Time (LeetCode #743)
+
+File: [networkDelayTime.py](./networkDelayTime.py)
+
+**Problem Description:**
+You are given a network of `n` nodes, labeled from `1` to `n`. You are also given `times`, a list of travel times as directed edges `times[i] = (ui, vi, wi)`, where `ui` is the source node, `vi` is the target node, and `wi` is the time it takes for a signal to travel from source to target. We will send a signal from a given node `k`. Return the time it takes for all the `n` nodes to receive the signal. If it is impossible for all the `n` nodes to receive the signal, return `-1`.
+
+**Approach:**
+- Uses Dijkstra's algorithm to find shortest paths from the source node to all other nodes
+- Builds an adjacency list representation of the graph with edge weights
+- Uses a min-heap to efficiently select the next node with minimum distance
+- Tracks visited nodes to avoid processing the same node multiple times
+- The maximum shortest path distance becomes the network delay time
+- Returns `-1` if not all nodes are reachable from the source
+- Time complexity: O((V + E) log V) where V is number of vertices and E is number of edges
+- Space complexity: O(V + E) for adjacency list, heap, and visited set
+
+**How to run:**
+```bash
+python networkDelayTime.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
