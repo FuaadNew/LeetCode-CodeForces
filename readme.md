@@ -807,6 +807,27 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
 python phone_combinations.py
 ```
 
+### Permutations (LeetCode #46)
+
+File: [permute.py](./permute.py)
+
+**Problem Description:**
+Given an array `nums` of distinct integers, return all the possible permutations. You can return the answer in any order.
+
+**Approach:**
+- Uses recursive backtracking with depth-first search (DFS) to generate all permutations
+- Maintains a current permutation being built and a result list of all permutations
+- For each position, tries all unused numbers from the input array
+- Backtracks by removing the last added number to explore other possibilities
+- Base case: when current permutation length equals input array length, add copy to results
+- Time complexity: O(n! × n) where n is the length of the input array (n! permutations, each taking O(n) to copy)
+- Space complexity: O(n) for recursion stack depth
+
+**How to run:**
+```bash
+python permute.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
