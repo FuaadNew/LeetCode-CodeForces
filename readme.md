@@ -828,6 +828,28 @@ Given an array `nums` of distinct integers, return all the possible permutations
 python permute.py
 ```
 
+### Permutations II (LeetCode #47)
+
+File: [permuteUnique.py](./permuteUnique.py)
+
+**Problem Description:**
+Given a collection of numbers `nums` that might contain duplicates, return all possible unique permutations in any order.
+
+**Approach:**
+- Uses recursive backtracking with frequency counting to handle duplicates
+- Maintains a hashmap to track the frequency of each number
+- For each position, tries all available numbers (with remaining count > 0)
+- Decrements frequency when using a number, increments when backtracking
+- Avoids generating duplicate permutations by using frequency instead of position-based tracking
+- Base case: when current permutation length equals input array length, add copy to results
+- Time complexity: O(n! × n) where n is the length of the input array
+- Space complexity: O(n) for recursion stack depth and frequency map
+
+**How to run:**
+```bash
+python permuteUnique.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
