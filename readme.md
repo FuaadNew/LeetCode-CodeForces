@@ -872,6 +872,28 @@ You are given a network of `n` nodes, labeled from `1` to `n`. You are also give
 python networkDelayTime.py
 ```
 
+### Path with Maximum Probability (LeetCode #1514)
+
+File: [maxProb.py](./maxProb.py)
+
+**Problem Description:**
+You are given an undirected weighted graph of `n` nodes (0-indexed), represented by an edge list where `edges[i] = [a, b]` is an undirected edge connecting the nodes `a` and `b` with a probability of success of traversing that edge `succProb[i]`. Given two nodes `start` and `end`, find the path with the maximum probability of success to go from `start` to `end` and return its success probability.
+
+**Approach:**
+- Uses Dijkstra's algorithm with a max heap to find the path with maximum probability
+- Implements max heap using negated probabilities in Python's min heap
+- Builds an adjacency list with probability-weighted edges for bidirectional graph
+- Tracks visited nodes to avoid cycles and redundant processing
+- Multiplies probabilities along the path (since probabilities are between 0 and 1)
+- Returns 0 if no path exists from start to end node
+- Time complexity: O((V + E) log V) where V is number of vertices and E is number of edges
+- Space complexity: O(V + E) for adjacency list, heap, and visited set
+
+**How to run:**
+```bash
+python maxProb.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
