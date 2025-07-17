@@ -894,6 +894,28 @@ You are given an undirected weighted graph of `n` nodes (0-indexed), represented
 python maxProb.py
 ```
 
+### Minimum Cost to Connect Points (LeetCode #1584)
+
+File: [minCostConnect.py](./minCostConnect.py)
+
+**Problem Description:**
+You are given an array `points` representing integer coordinates of some points on a 2D-plane, where `points[i] = [xi, yi]`. The cost of connecting two points `[xi, yi]` and `[xj, yj]` is the Manhattan distance between them: `|xi - xj| + |yi - yj|`. Return the minimum cost to make all points connected.
+
+**Approach:**
+- Uses Prim's algorithm to find the Minimum Spanning Tree (MST)
+- Builds an adjacency list with Manhattan distances as edge weights
+- Uses a min-heap to efficiently select the next edge with minimum cost
+- Tracks visited nodes to avoid cycles in the MST
+- Continues until all points are included in the spanning tree
+- Manhattan distance formula: |x1 - x2| + |y1 - y2|
+- Time complexity: O(n² log n) where n is the number of points
+- Space complexity: O(n²) for adjacency list and heap storage
+
+**How to run:**
+```bash
+python minCostConnect.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
