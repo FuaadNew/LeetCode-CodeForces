@@ -4,6 +4,28 @@ This repository contains my solutions to various competitive programming problem
 
 ## Problems
 
+### Course Schedule (LeetCode #207)
+
+File: [canFinish.py](./canFinish.py)
+
+**Problem Description:**
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course `bi` first if you want to take course `ai`. Return `true` if you can finish all courses, otherwise return `false`.
+
+**Approach:**
+- Uses Depth-First Search (DFS) with cycle detection to determine if all courses can be completed
+- Builds an adjacency list where each course points to its prerequisites
+- Implements DFS with a visited set to detect cycles in the prerequisite graph
+- If a cycle is found, it's impossible to complete all courses
+- Uses memoization by clearing prerequisite lists for courses that are confirmed safe
+- Backtracks properly by removing courses from the current DFS path
+- Time complexity: O(V + E) where V is number of courses and E is number of prerequisites
+- Space complexity: O(V + E) for adjacency list and recursion stack
+
+**How to run:**
+```bash
+python canFinish.py
+```
+
 ### Two Sum (LeetCode)
 
 File: [twoSum.py](./twoSum.py)
