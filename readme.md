@@ -26,6 +26,29 @@ There are a total of `numCourses` courses you have to take, labeled from `0` to 
 python canFinish.py
 ```
 
+### Course Schedule II (LeetCode #210)
+
+File: [findorder.py](./findorder.py)
+
+**Problem Description:**
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course `bi` first if you want to take course `ai`. Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
+
+**Approach:**
+- Uses Depth-First Search (DFS) with cycle detection to determine course scheduling order
+- Builds an adjacency list where each course points to its prerequisites
+- Implements DFS with a visited set to detect cycles in the prerequisite graph
+- If a cycle is found, returns an empty array as scheduling is impossible
+- Uses memoization by clearing prerequisite lists for courses that are confirmed safe
+- Returns topological ordering of courses by appending to result after processing prerequisites
+- Backtracks properly by removing courses from the current DFS path
+- Time complexity: O(V + E) where V is number of courses and E is number of prerequisites
+- Space complexity: O(V + E) for adjacency list and recursion stack
+
+**How to run:**
+```bash
+python findorder.py
+```
+
 ### Two Sum (LeetCode)
 
 File: [twoSum.py](./twoSum.py)
