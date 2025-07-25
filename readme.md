@@ -961,6 +961,27 @@ You are given an array `points` representing integer coordinates of some points 
 python minCostConnect.py
 ```
 
+### Target Sum (LeetCode #494)
+
+File: [findTargetSumWays.py](./findTargetSumWays.py)
+
+**Problem Description:**
+You are given an integer array `nums` and an integer `target`. You want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers. Return the number of different expressions that you can build, which evaluates to target.
+
+**Approach:**
+- Uses dynamic programming with memoization to avoid redundant calculations
+- Implements depth-first search (DFS) to explore all possible combinations of '+' and '-' signs
+- For each number, recursively tries both adding and subtracting it from the current sum
+- Memoizes results using (index, current_sum) as the key to cache computed values
+- Base case: when all numbers are processed, check if current sum equals target
+- Time complexity: O(n × S) where n is the length of nums and S is the range of possible sums
+- Space complexity: O(n × S) for memoization storage
+
+**How to run:**
+```bash
+python findTargetSumWays.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
