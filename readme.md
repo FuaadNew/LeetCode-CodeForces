@@ -982,6 +982,29 @@ You are given an integer array `nums` and an integer `target`. You want to build
 python findTargetSumWays.py
 ```
 
+### Ones and Zeroes (LeetCode #474)
+
+File: [findMaxForm.py](./findMaxForm.py)
+
+**Problem Description:**
+You are given an array of binary strings `strs` and two integers `m` and `n`. Return the size of the largest subset of `strs` such that there are at most `m` 0's and `n` 1's in the subset.
+
+**Approach:**
+- Uses dynamic programming with memoization (top-down approach)
+- Implements depth-first search (DFS) to explore all possible combinations of strings
+- For each string, counts the number of 0's and 1's and makes two decisions: include or exclude
+- Memoizes results using (index, remaining_m, remaining_n) as the key to avoid redundant calculations
+- Base case: when all strings are processed, return 0
+- Skips strings that exceed the remaining budget of 0's or 1's
+- Chooses the maximum between including and excluding each string
+- Time complexity: O(len(strs) × m × n) due to memoization
+- Space complexity: O(len(strs) × m × n) for memoization storage
+
+**How to run:**
+```bash
+python findMaxForm.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
