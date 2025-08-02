@@ -1005,6 +1005,28 @@ You are given an array of binary strings `strs` and two integers `m` and `n`. Re
 python findMaxForm.py
 ```
 
+### Last Stone Weight II (LeetCode #1049)
+
+File: [lastStoneWeightII.py](./lastStoneWeightII.py)
+
+**Problem Description:**
+You are given an array of integers `stones` where `stones[i]` is the weight of the ith stone. We are playing a game with the stones. On each turn, we choose any two stones and smash them together. Suppose the stones have weights `x` and `y` with `x <= y`. The result of this smash is: If `x == y`, both stones are destroyed. If `x != y`, the stone of weight `x` is destroyed, and the stone of weight `y` has new weight `y - x`. At the end of the game, there is at most one stone left. Return the smallest possible weight of the left stone. If there are no stones left, return 0.
+
+**Approach:**
+- Uses dynamic programming with memoization to find the optimal stone grouping
+- Transforms the problem into partitioning stones into two groups with minimum weight difference
+- Target is to get as close as possible to half of the total stone weight for one group
+- Implements DFS with memoization using (index, current_total) as the cache key
+- For each stone, explores two choices: include it in the current group or exclude it
+- Returns the absolute difference between the two groups' weights
+- Time complexity: O(n × sum/2) where n is the number of stones and sum is the total weight
+- Space complexity: O(n × sum/2) for memoization storage
+
+**How to run:**
+```bash
+python lastStoneWeightII.py
+```
+
 # Usage
 
 Each solution can be run individually. The code includes test cases to demonstrate functionality.
